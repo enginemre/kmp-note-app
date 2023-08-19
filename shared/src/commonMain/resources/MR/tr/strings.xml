@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="hello">Selam</string>
+    <string name="notes">Notlar</string>
+    <string name="empty_view_text">İlk notunu şimdi oluştur</string>
+    <string name="empty_search_text">Not Bulunamadı tekrar deneyin</string>
+    <string name="search_hint">Aramaya başlayın...</string>
+</resources>
