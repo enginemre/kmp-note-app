@@ -7,5 +7,11 @@ data class NoteDetailState(
     var descriptionText : String = "",
     var note: Note? = null,
     var isLoading : Boolean = false,
-    var isEditMode : Boolean = false,
+    var detailModes : DetailModes = DetailModes.READ,
 )
+
+enum class DetailModes{
+    ADD,
+    EDIT,
+    READ
+}

@@ -70,7 +70,7 @@ fun SearchField(
         singleLine = true,
         trailingIcon =  {
             IconButton(onClick = {
-
+                onCloseClick()
             }) {
                 Icon(
                     imageVector =  Icons.Default.Close,

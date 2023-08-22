@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import kotlinx.datetime.LocalDateTime
 
 data class Note(
-    val id : Long,
+    val id : Long?,
     var title : String,
     var detail : String,
     val containerColor : Long,

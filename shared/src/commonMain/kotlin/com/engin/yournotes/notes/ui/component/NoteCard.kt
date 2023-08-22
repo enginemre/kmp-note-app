@@ -24,16 +24,16 @@ import dev.icerock.moko.resources.compose.fontFamilyResource
 @Composable
 fun NoteCard(
     modifier: Modifier = Modifier,
-    containerColor: Color,
+    containerColor: Long,
     title : String,
-    noteId: Int,
-    onClick: (Int) -> Unit,
+    noteId: Long?,
+    onClick: (Long?) -> Unit,
 ) {
     Card(
         modifier = Modifier.fillMaxWidth().wrapContentHeight(),
         shape = RoundedCornerShape(10.dp),
         colors =  CardDefaults.cardColors(
-            containerColor = containerColor,
+            containerColor = Color(containerColor),
             contentColor = Color.Black,
         ),
         onClick = {

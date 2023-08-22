@@ -2,6 +2,7 @@
 <resources>
     <string name="hello">Hello</string>
     <string name="notes">Notes</string>
+    <string name="search">Search</string>
     <string name="empty_view_text">Create your first note !</string>
     <string name="empty_search_text">Note not found. Try searching again</string>
     <string name="search_hint">Search by Keyword...</string>

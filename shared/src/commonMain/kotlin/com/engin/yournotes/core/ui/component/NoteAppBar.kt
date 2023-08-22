@@ -124,7 +124,7 @@ fun generateActions(key: String,actions: (@Composable RowScope.() -> Unit)?) {
 @Composable
 fun generateNavigationIcon(key: String) {
     when (key) {
-        ScreenKeys.NoteDetail -> {
+        ScreenKeys.NoteDetail,ScreenKeys.Search -> {
             val navigator = LocalNavigator.current
             Image(
                 modifier = Modifier
