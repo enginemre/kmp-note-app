@@ -7,10 +7,15 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class InsertNoteUseCase(
-    private val noteRepository: NoteRepository
+    private val noteRepository: NoteRepository,
 ) {
-    operator fun invoke(note : Note) : Flow<Resource<Unit>> = flow {
+    operator fun invoke(note: Note?): Flow<Resource<Unit>> = flow {
         emit(Resource.Loading())
-        emit(Resource.Success(noteRepository.insertNote(note)))
+        note?.let {
+            emit(Resource.Success(noteRepository.insertNote(note)))
+        } ?: run {
+            emit(Resource.Error("Cannot insert note"))
+        }
     }
+
 }

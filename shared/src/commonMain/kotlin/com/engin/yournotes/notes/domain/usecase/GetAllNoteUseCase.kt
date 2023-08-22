@@ -9,7 +9,6 @@ import kotlinx.coroutines.flow.flow
 class GetAllNoteUseCase (
     private val noteRepository: NoteRepository
 ) {
-
     operator fun invoke() : Flow<Resource<List<Note>>>{
         return flow {
             emit(Resource.Loading())
