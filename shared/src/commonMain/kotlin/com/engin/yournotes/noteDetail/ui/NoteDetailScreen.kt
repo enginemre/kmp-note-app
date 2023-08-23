@@ -240,7 +240,7 @@ data class NoteDetailScreen(
             )
             NoteDescription(
                 modifier = Modifier.wrapContentHeight()
-                    .padding(horizontal = 24.dp, vertical = 24.dp),
+                    .padding(horizontal = 24.dp),
                 value = descriptionText,
                 onValueChanged = onDescriptionChange,
                 editEnable = isEditEnable

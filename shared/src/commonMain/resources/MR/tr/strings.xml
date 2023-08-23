@@ -2,6 +2,9 @@
 <resources>
     <string name="hello">Selam</string>
     <string name="notes">Notlar</string>
+    <string name="search">Arama</string>
+    <string name="title">Başlık</string>
+    <string name="description">Açıklama</string>
     <string name="empty_view_text">İlk notunu şimdi oluştur</string>
     <string name="empty_search_text">Not Bulunamadı tekrar deneyin</string>
     <string name="search_hint">Aramaya başlayın...</string>

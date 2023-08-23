@@ -163,7 +163,7 @@ class NoteDetailViewModel(
         state.value.note?.id?.let {
             jobDeleteNote = viewModelScope.launch {
                 deleteNoteByIdUseCase(it).collectLatest {
-                    // TODO go back
+                    _uiEvent.send(AppUIEvent.Navigate())
                 }
             }
 

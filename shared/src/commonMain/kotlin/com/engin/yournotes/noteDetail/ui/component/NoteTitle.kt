@@ -12,6 +12,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.engin.yournotes.SharedResources
 import dev.icerock.moko.resources.compose.fontFamilyResource
+import dev.icerock.moko.resources.compose.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,7 +35,7 @@ fun NoteTitle(
         ),
         placeholder = {
             Text(
-                text = "Title",
+                text = stringResource(SharedResources.strings.title),
                 style = TextStyle(
                     fontSize = 35.sp,
                     fontFamily = fontFamilyResource(SharedResources.fonts.Nunito.regular),

@@ -12,6 +12,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.engin.yournotes.SharedResources
 import dev.icerock.moko.resources.compose.fontFamilyResource
+import dev.icerock.moko.resources.compose.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,7 +35,7 @@ fun NoteDescription(
         ),
         placeholder = {
             Text(
-                text = "Description",
+                text = stringResource(SharedResources.strings.description),
                 style = TextStyle(
                     fontSize = 23.sp,
                     fontFamily = fontFamilyResource(SharedResources.fonts.Nunito.regular),
